@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+body{
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-normal;
+}
+
+button{
+    font-family: 'Sora', sans-serif;
+    cursor: pointer
+}
+
+svg{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin: 10px;
+}
+
+/* Animação de hover */
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Animação suave */
+}
+
+a:hover::after {
+    width: 100%; /* Aumenta a largura até cobrir todo o texto */
+}
+
+/* Menu oculto em telas pequenas */
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Exibir o menu em telas maiores */
+@media (max-width: 800px) {
+    .header-icons {
+        display: none; /* Oculta o menu no mobile */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Mostra o menu quando o botão for clicado */
+    .header-icons.active {
+        display: flex;
+    }
+
+    /* Mostra o ícone de hambúrguer no mobile */
+    .menu-toggle {
+        display: block;
+    }
+}

@@ -24,3 +24,34 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides; // Incrementa o índice
     showSlide(currentIndex); // Mostra o slide atual
 }, 3000); // Muda a cada 3 segundos
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.card-wrapper', {
+        loop: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+});

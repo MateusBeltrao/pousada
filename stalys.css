@@ -54,6 +54,7 @@ i {
 }
 
 .header-logo {
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,22 +88,30 @@ i {
 
 .bg-home {
   position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0; /* Define o vídeo no topo da div */
+  left: 0;
+  width: 100%;
+  height: 70vh; /* Define a altura do vídeo, ajuste conforme necessário */
+  -o-object-fit: cover;
+     object-fit: cover; /* Cobre a largura, mas mantém a proporção do vídeo */
+  z-index: -1;
 }
 
 .bg-home::before {
   content: "";
-  display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/fd155a322ac6de2bf5d3218924def20b.gif");
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  opacity: 0.9;
+  z-index: 0;
 }
 
 .hero {
@@ -114,12 +123,14 @@ i {
   justify-content: center;
   padding: 14px;
 }
+
 .hero h1 {
   text-align: center;
   line-height: 150%;
   max-width: 940px;
   font-size: 46px;
 }
+
 .hero p {
   text-align: center;
   margin: 14px 0;
@@ -128,7 +139,7 @@ i {
 .button-contact {
   padding: 14px 28px;
   color: #fff;
-  background-color: #d94140;
+  background-color: #f00;
   border: 0;
   font-size: 18px;
   font-weight: 600;

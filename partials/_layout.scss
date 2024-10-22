@@ -4,94 +4,106 @@
     padding: 0 8px;
 }
 
-.bg-home{
+.bg-home {
     position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
 
-.bg-home::before{
-    content: '';
-    display: block;
+.video-bg {
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/fd155a322ac6de2bf5d3218924def20b.gif");
+    top: 0; /* Define o vídeo no topo da div */
     left: 0;
+    width: 100%;
+    height: 70vh; /* Define a altura do vídeo, ajuste conforme necessário */
+    object-fit: cover; /* Cobre a largura, mas mantém a proporção do vídeo */
+    z-index: -1;
+}
+
+.bg-home::before {
+    content: '';
+    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:50% 0 ;
-    opacity: 0.9;
+    z-index: 0;
 }
 
-
-
-.hero{
-    color: $white-normal;
+.hero {
+    color: #fff;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 14px;
-
-    h1{
-        text-align: center;
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 46px;
-    }
-
-    p{
-        text-align: center;
-        margin: 14px 0;
-    }
 }
 
-.button-contact{
+.hero h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+}
+
+.hero p {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.button-contact {
     padding: 14px 28px;
-    color: $white-normal;
-    background-color: $red-normal;
+    color: #fff;
+    background-color: #f00;
     border: 0;
     font-size: 18px;
     font-weight: 600;
     margin: 14px 0;
 }
 
-.button-contact:hover{
+.button-contact:hover {
     animation: scaleButton 0.8s alternate infinite;
 }
 
-@keyframes scaleButton{
-    from{
+@keyframes scaleButton {
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.07);
     }
 }
 
-@media screen and (max-width: 768px){
-    .hero{
+@media screen and (max-width: 768px) {
+    .hero {
         min-height: 60vh;
+    }
 
-        h1{
-            font-size: 34px;
-            padding: 0 14px;
-            width: 100%;
-        }
+    .hero h1 {
+        font-size: 34px;
+        padding: 0 14px;
+        width: 100%;
+    }
 
-        p{
-            font-size: 15px;
-        }
+    .hero p {
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .hero h1{
+    .hero h1 {
         font-size: 24px;
     }
 }
+
+
+
+
+
+
+
 
 
 .slideshow-container {

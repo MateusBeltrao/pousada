@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="stalys.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -95,47 +96,86 @@
                     <img src="assets/IMG_2554.JPG" class="about-img" alt="Imagem sobre a barbearia">
                 </div>
             </div>
-            
+
 
         </div>
     </section>
 
-    <section class="services">
-        <div class="services-content container">
-            <h2>Serviços</h2>
-            <p>Na nossa barbearia, oferecemos uma variedade de serviços para atender às suas necessidades de cuidados
-                masculinos. Desde cortes de cabelo clássicos até tratamentos de barba, estamos aqui para garantir que
-                você saia sempre com uma aparência impecável e confiante.</p>
-        </div>
 
-        <section class="haircusts" data-aos="fade-up" data-aos-delay="150">
+
+    <section class="services">
+
+        <section class="haircusts" data-aos="fade-up" data-aos-delay="50">
             <div class="haircust">
-                <img src="assets/corte1.png" alt="Corte normal">
+
                 <div class="haircust-info">
-                    <strong>Corte normal</strong>
-                    <button>
-                        R$ 45,00
-                    </button>
+                    <img class="icons-service" src="assets/wifi-signal.png" alt="Wi-Fi Signal">
+                    <strong>Internet Wifi</strong>
+                    <p style="color: white;">*</p>
+                    <p style="color: white;">*</p>
+                </div>
+            </div>
+
+            <div class="haircust" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="haircust-info">
+                    <img class="icons-service" src="assets/breakfast.png" alt="Wi-Fi Signal">
+                    <strong>Barba complenta</strong>
+                    <p>Todas as nossas suites tem cafeteira com café e chá </p>
+                </div>
+            </div>
+
+            <div class="haircust" data-aos="fade-up" data-aos-delay="150">
+                <div class="haircust-info">
+                    <img class="icons-service" src="assets/dinner.png" alt="Wi-Fi Signal">
+                    <strong>Gastronomia</strong>
+                    <p>Serviço de quarto, Bar, Cardápio dietas especiais (mediante pedido)</p>
+                </div>
+            </div>
+
+            <div class="haircust" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="haircust-info">
+                    <img class="icons-service" src="assets/pet-house.png" alt="Wi-Fi Signal">
+                    <strong>Pets</strong>
+                    <p>Animais de estimação não são permitiods.</p>
                 </div>
             </div>
 
             <div class="haircust" data-aos="fade-up" data-aos-delay="250">
-                <img src="assets/corte2.png" alt="Barba complenta">
                 <div class="haircust-info">
-                    <strong>Barba complenta</strong>
-                    <button>
-                        R$ 35,00
-                    </button>
+                    <img class="icons-service" src="assets/star.png" alt="Wi-Fi Signal">
+                    <strong>Comoidade VIP</strong>
+                    <p>Entretenimento serviçõs para a famílias</p>
+
                 </div>
             </div>
 
-            <div class="haircust" data-aos="fade-up" data-aos-delay="350">
-                <img src="assets/corte3.png" alt="Corte normal e barba">
-                <div class="haircust-info">
-                    <strong>Corte e barba</strong>
-                    <button>
-                        R$ 85,00
-                    </button>
+
+            <div>
+                <span>SLIDER</span>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-img">
+                                <img src="assets/IMG_2550.JPG" alt="foto 01">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-img">
+                                <img src="assets/IMG_2551.JPG" alt="foto 02">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-img">
+                                <img src="assets/IMG_2552.JPG" alt="foto 03">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div> <!-- Adicione a paginação se desejar -->
                 </div>
             </div>
         </section>
@@ -210,6 +250,8 @@
         <span class="tooltip-text"> Agende seu horário</span>
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
     <script src="script.js"></script>
 </body>
 

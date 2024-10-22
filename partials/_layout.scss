@@ -94,12 +94,10 @@
 }
 
 
-
 .slideshow-container {
     position: relative;
     width: 400px; /* Largura do container */
-    height: 1200px; /* Altura do container */
-    overflow: hidden; /* Esconde o excesso de imagem */
+    height: 800px; /* Altura do container */
 }
 
 .about-img-container {
@@ -107,13 +105,10 @@
     position: absolute;
     width: 100%; /* Largura do container ajustada */
     height: 100%; /* Altura do container ajustada */
-    transition: opacity 1s ease-in-out; /* Transição suave */
-    opacity: 0; /* Inicialmente invisível */
 }
 
 .about-img-container.active {
     display: block; /* Exibe apenas a imagem ativa */
-    opacity: 1; /* Torna a imagem ativa visível */
 }
 
 .about {
@@ -127,6 +122,16 @@
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
+}
+
+.about-content div {
+    flex: 1;
+}
+
+.about-img {
+    width: 400px;   /* Largura da imagem */
+    height: 800px; /* Altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço corretamente */
 }
 
 .about-description {
@@ -148,17 +153,43 @@
     .about-content {
         flex-direction: column;
     }
-}
 
+    .slideshow-container {
+       
+        width: 100%; /* Largura do container */
+        height: 800px; /* Altura do container */
+    }
 
-@media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
+    .about-img {
+        width: 100%;   /* Largura da imagem */
+        height: 800px; /* Altura da imagem */
+    }
+
+    .about {
+        background-color: $white-normal;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .about {
+        background-color: $white-normal;
+        overflow: hidden;
+        height: 130vh;
     }
 }
 
 
-.services{
+
+
+
+
+
+
+
+
+
+
+.services {
     background-color: $white-normal;
     color: $secondary-normal;
     display: flex;
@@ -168,77 +199,111 @@
     padding: 54px 14px;
 }
 
-.services-content h2{
+.services-content h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 38px;
     margin-bottom: 14px;
 }
 
-.services-content p{
+.services-content p {
     line-height: 150%;
     margin-bottom: 14px;
     text-align: center;
     max-width: 780px;
-} 
-
-.haircusts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding: 0 44px 34px 44px;
 }
 
-.haircust{
-    flex: 1;
+/* Container para os elementos */
+.haircusts {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha para criar 2 ou 3 linhas conforme necessário */
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre os itens */
+}
+
+.haircust {
+    width: 30%; /* No desktop, 3 itens por linha */
+    max-width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: $white-normal;
-    border-radius: 8px;
-    box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.45);
-
-    overflow: hidden;
-
-    img{
-        width: 100%;
-        max-width: 354px;
-        transition: transform 0.2s;
-    }
+    align-items: center;
+    margin: 50px;
 }
 
-.haircust img:hover{
-    transform: scale(1.2);
-    z-index: 1;
+.icons-service {
+    fill: lightblue;
+    filter: invert(64%) sepia(45%) saturate(611%) hue-rotate(168deg) brightness(94%) contrast(97%);
+    width: 50px;
 }
 
-.haircust-info{
+.haircust-info {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 14px;
     background-color: $white-normal;
-    z-index: 99;
 }
 
-
-.haircust-info button{
-    color: $white-normal;
-    background-color: $red-normal;
-    padding: 4px 8px;
-    border-radius: 4px;
-    border: 0;
-    cursor: default;
+.haircust-info strong {
+    color: rgb(0, 91, 121);
+    margin: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .haircusts{
-        flex-direction: column;
+.haircust-info p {
+    font-size: 12px;
+    font-weight: 400;
+    width: 250px;
+    text-align: center;
+}
+
+.swiper {
+    height: 500px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Mobile layout - 2 itens por linha */
+@media screen and (max-width: 768px) {
+    .haircusts {
+        width: 100%;
+        gap: 20px; /* Ajusta o espaçamento entre os itens no mobile */
     }
-    .haircust{
-        max-width: 740px;
+
+    .haircust {
+        margin: 0;
+        width: 45%; /* 2 itens por linha no mobile */
+    }
+
+    .services-content {
+        order: 2; /* Coloca o conteúdo para baixo no mobile */
+    }
+
+    .haircusts {
+        order: 1; /* Os 5 itens ficam acima no mobile */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

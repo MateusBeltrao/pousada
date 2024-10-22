@@ -167,20 +167,23 @@ i {
 }
 .slideshow-container {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 400px; /* Largura do container */
+  height: 1200px; /* Altura do container */
+  overflow: hidden; /* Esconde o excesso de imagem */
 }
 
 .about-img-container {
   display: none; /* Esconde todas as imagens inicialmente */
-  position: relative; /* Ajusta o container para acompanhar a altura da imagem */
-  width: 250px; /* Define a largura do container para 400px */
-  height: 600px; /* Define a altura do container para 1200px */
-  margin-left: 20%;
+  position: absolute;
+  width: 100%; /* Largura do container ajustada */
+  height: 100%; /* Altura do container ajustada */
+  transition: opacity 1s ease-in-out; /* Transição suave */
+  opacity: 0; /* Inicialmente invisível */
 }
 
 .about-img-container.active {
   display: block; /* Exibe apenas a imagem ativa */
+  opacity: 1; /* Torna a imagem ativa visível */
 }
 
 .about {
@@ -194,17 +197,6 @@ i {
   justify-content: center;
   gap: 14px;
   padding: 34px 14px 64px 14px;
-}
-
-.about-content div {
-  flex: 1;
-}
-
-.about-img {
-  width: 250px; /* Define a largura da imagem */
-  height: 600px; /* Define a altura da imagem */
-  -o-object-fit: cover;
-     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
 }
 
 .about-description h2 {
@@ -223,12 +215,10 @@ i {
   .about-content {
     flex-direction: column;
   }
-  .about-img-container {
-    width: 100%; /* Define a largura do container para 400px */
-    margin-left: 0;
-  }
-  .about-img {
-    width: 100%; /* Define a largura da imagem */
+}
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
   }
 }
 .services {

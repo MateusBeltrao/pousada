@@ -20,6 +20,8 @@ i{
     gap: 14px;
 }
 
+
+
 .header-icons a:hover{
     i{
         animation: translateY 0.8s infinite alternate;
@@ -73,6 +75,7 @@ i{
     }
 
     .header-logo img{
+        display: none;
         width: 160px;
         margin-top: 46px;
     }

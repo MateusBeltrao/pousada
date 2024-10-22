@@ -73,6 +73,7 @@ i {
     font-size: 34px;
   }
   .header-logo img {
+    display: none;
     width: 160px;
     margin-top: 46px;
   }

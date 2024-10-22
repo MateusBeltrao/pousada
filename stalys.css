@@ -271,6 +271,19 @@ i {
     overflow: hidden;
     height: 130vh;
   }
+  .slider {
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+  }
+  .slides {
+    height: auto; /* Permite que os slides se ajustem automaticamente */
+  }
+  .slide img {
+    width: 100%; /* A imagem ocupa 100% da largura do slide */
+    height: auto; /* Mantém a proporção da imagem */
+    -o-object-fit: cover;
+       object-fit: cover; /* Faz com que a imagem preencha o slide sem esticar */
+  }
 }
 .services {
   background-color: #fff;

@@ -26,6 +26,11 @@ i {
   gap: 14px;
 }
 
+.header-icons a {
+  font-weight: 500;
+  font-style: initial;
+}
+
 .header-icons a:hover i {
   animation: translateY 0.8s infinite alternate;
   color: #d34040;

@@ -338,19 +338,13 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px;
+  padding: 10px;
   background-color: #fff;
 }
 
 .haircust-info strong {
   color: #4da330;
   margin: 10px;
-}
-
-.haircust-info p {
-  font-size: 12px;
-  font-weight: 400;
-  width: 250px;
   text-align: center;
 }
 

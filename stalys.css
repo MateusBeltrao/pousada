@@ -165,6 +165,24 @@ i {
     font-size: 24px;
   }
 }
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.about-img-container {
+  display: none; /* Esconde todas as imagens inicialmente */
+  position: relative; /* Ajusta o container para acompanhar a altura da imagem */
+  width: 250px; /* Define a largura do container para 400px */
+  height: 600px; /* Define a altura do container para 1200px */
+  margin-left: 20%;
+}
+
+.about-img-container.active {
+  display: block; /* Exibe apenas a imagem ativa */
+}
+
 .about {
   background-color: #fff;
   overflow: hidden;
@@ -177,17 +195,16 @@ i {
   gap: 14px;
   padding: 34px 14px 64px 14px;
 }
-.about-content img {
-  max-width: 570px;
-}
 
 .about-content div {
   flex: 1;
 }
 
 .about-img {
-  width: 70%;
-  margin: 20px;
+  width: 250px; /* Define a largura da imagem */
+  height: 600px; /* Define a altura da imagem */
+  -o-object-fit: cover;
+     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
 }
 
 .about-description h2 {

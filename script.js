@@ -27,10 +27,14 @@ setInterval(() => {
 
 
 
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.card-wrapper', {
         loop: true,
-        spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
         },
@@ -55,3 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+let currentIndex2 = 0;
+const slides2 = document.querySelectorAll('.slide-2');
+const totalSlides2 = slides2.length;
+
+function showSlide2(index) {
+    const slidesContainer2 = document.querySelector('.slides-2');
+    const offset2 = -index * 100;
+    slidesContainer2.style.transform = `translateX(${offset2}%)`;
+}
+
+setInterval(() => {
+    currentIndex2 = (currentIndex2 + 1) % totalSlides2;
+    showSlide2(currentIndex2);
+}, 3000);

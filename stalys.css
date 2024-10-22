@@ -223,6 +223,13 @@ i {
   .about-content {
     flex-direction: column;
   }
+  .about-img-container {
+    width: 100%; /* Define a largura do container para 400px */
+    margin-left: 0;
+  }
+  .about-img {
+    width: 100%; /* Define a largura da imagem */
+  }
 }
 .services {
   background-color: #fff;

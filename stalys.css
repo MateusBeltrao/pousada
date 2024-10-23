@@ -819,6 +819,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .logo-footer {
+    width: 300px;
+  }
   .btn-whatsapp img {
     max-width: 64px;
   }

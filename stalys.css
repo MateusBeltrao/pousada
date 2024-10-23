@@ -819,6 +819,10 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  footer p {
+    text-align: center;
+    width: 50%;
+  }
   .logo-footer {
     width: 300px;
   }

@@ -29,6 +29,7 @@ i {
 .header-icons a {
   font-weight: 500;
   font-style: initial;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 .header-icons a:hover i {
@@ -410,6 +411,97 @@ i {
        object-fit: cover;
   }
 }
+/* Responsividade para slider-2 */
+@media screen and (min-width: 2000px) {
+  .conteudo-about {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-2 {
+    width: 1200px;
+    height: 600px; /* Altura do slider */
+    margin: 0;
+  }
+  .about-description p {
+    width: 100%;
+    font-size: 24px;
+  }
+  .about-description h2 {
+    width: 100%;
+    font-size: 39px;
+  }
+}
+@media screen and (min-width: 2800px) {
+  .conteudo-about {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-2 {
+    width: 1500px;
+    height: 900px; /* Altura do slider */
+    margin: 0;
+  }
+  .about-description p {
+    width: 100%;
+    font-size: 35px;
+  }
+  .about-description h2 {
+    width: 100%;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about {
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .about-description p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .about-description h2 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .slider-2 {
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+  }
+  .slides-2 {
+    height: auto; /* Permite que os slides se ajustem automaticamente */
+  }
+  .slide-2 img {
+    width: 100%; /* A imagem ocupa 100% da largura do slide */
+    height: auto; /* Mantém a proporção da imagem */
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .services {
   background-color: #fff;
   color: #090d11;
@@ -674,6 +766,7 @@ i {
   justify-content: center;
   padding: 54px 0;
   gap: 24px;
+  background: linear-gradient(#51a660, #36a3aa);
   color: #fff;
 }
 
@@ -681,6 +774,14 @@ i {
   display: flex;
   gap: 8px;
   color: #fff;
+}
+
+.logo-footer {
+  width: 500px;
+  border-radius: 50%; /* Faz com que a imagem e o fundo sejam redondos */
+  background-color: rgba(0, 0, 0, 0.2); /* Adiciona um fundo escuro levemente transparente */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra arredondada */
+  padding: 10px; /* Ajuste o espaçamento para o fundo */
 }
 
 .btn-whatsapp {

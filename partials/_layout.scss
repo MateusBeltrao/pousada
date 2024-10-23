@@ -307,14 +307,23 @@
     .about {
         background-color: $white-normal;
         overflow: hidden;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
     }
 
-    .about {
-        background-color: $white-normal;
-        overflow: hidden;
-        height: 130vh;
-    }
+
+
+    .about-description {
+        p {
+            width: 100%;
+            font-size: 10px;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 50px;
+        }
+    } 
 
     .slider {
         width: 100%; /* Ocupa 100% da largura do contêiner */

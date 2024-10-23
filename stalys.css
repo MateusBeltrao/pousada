@@ -338,12 +338,16 @@ i {
   .about {
     background-color: #fff;
     overflow: hidden;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
-  .about {
-    background-color: #fff;
-    overflow: hidden;
-    height: 130vh;
+  .about-description p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .about-description h2 {
+    width: 100%;
+    font-size: 50px;
   }
   .slider {
     width: 100%; /* Ocupa 100% da largura do contêiner */

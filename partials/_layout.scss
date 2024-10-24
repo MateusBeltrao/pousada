@@ -291,7 +291,7 @@
     .about-description {
         p {
             width: 100%;
-            font-size: 10px;
+            font-size: 15px;
         }
 
         h2 {
@@ -395,6 +395,7 @@
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
+    margin-top: 10px;
 }
 
 .services-content h2 {
@@ -648,8 +649,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ccc;
+
     padding: 3px; /* Diminui o espaçamento interno */
     cursor: pointer;
 
@@ -659,16 +659,16 @@
 
 /* Distância dos botões da lateral */
 .swiper-button-prev {
-    left: -5px; /* Mova para fora da imagem */
+    left: -6px; /* Mova para fora da imagem */
 }
 
 .swiper-button-next {
-    right: -5px; /* Mova para fora da imagem */
+    right: -6px; /* Mova para fora da imagem */
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 20px; /* Ajusta o tamanho do ícone da seta */
+    font-size: 30px; /* Ajusta o tamanho do ícone da seta */
 }
 
 

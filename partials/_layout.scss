@@ -395,7 +395,8 @@
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .services-content h2 {
@@ -686,22 +687,25 @@
     justify-content: center;
     padding: 54px 0;
     gap: 24px;
-    background: linear-gradient(#51a660, #36a3aa) ;
+    background-color: #fdc604; ;
     color: $white-normal;
+    color: #4da330;
 }
 
-.footer-icons{
-    display: flex;
-    gap: 8px;
-    color: $white-normal;
-}
+
 
 .logo-footer {
-    width: 500px;
+    width: 300px;
     border-radius: 50%; /* Faz com que a imagem e o fundo sejam redondos */
     background-color: rgba(0, 0, 0, 0.2); /* Adiciona um fundo escuro levemente transparente */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra arredondada */
     padding: 10px; /* Ajuste o espaçamento para o fundo */
+}
+
+.footer p {
+    font-weight: 600;
+    font-style: initial;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -752,7 +756,7 @@
     }
 
     .logo-footer{
-        width: 300px;
+        width: 250px;
     }
 
     .btn-whatsapp{

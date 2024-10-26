@@ -827,17 +827,22 @@ i {
 }
 
 .alocacao-info button {
-  color: #fff;
-  background-color: #d94140;
+  color: #4da330;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #fdc604;
   padding: 4px 8px;
   border-radius: 4px;
   border: 0;
-  cursor: default;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
   .alocacaos {
     flex-direction: column;
+  }
+  .alocacao {
+    width: 300px;
   }
 }
 .forms {

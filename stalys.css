@@ -45,20 +45,6 @@ i {
     transform: translateY(-8px) scale(1.1);
   }
 }
-.header-button {
-  border: 1px solid #fff;
-  padding: 8px 24px;
-  border-radius: 4px;
-  color: #fff;
-  background-color: transparent;
-  transition: background-color 0.8s;
-}
-
-.header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
-}
-
 .header-logo {
   width: 200px;
   display: flex;
@@ -628,6 +614,8 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 25%;
   padding: 54px 0;
   gap: 24px;
   background-color: #fdc604;
@@ -635,18 +623,56 @@ i {
   color: #4da330;
 }
 
+.img-logo {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+}
+
 .logo-footer {
-  width: 300px;
+  width: 100px;
   border-radius: 50%; /* Faz com que a imagem e o fundo sejam redondos */
   background-color: rgba(0, 0, 0, 0.2); /* Adiciona um fundo escuro levemente transparente */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra arredondada */
   padding: 10px; /* Ajuste o espaçamento para o fundo */
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .footer p {
   font-weight: 600;
   font-style: initial;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-conteudo {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.icons {
+  margin: 20px;
+  margin-top: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon img {
+  width: 20px;
+  filter: invert(24%) sepia(65%) saturate(600%) hue-rotate(102deg) brightness(95%) contrast(100%);
+}
+
+.icon p {
+  margin-left: 5px;
+}
+
+.footer-icons {
+  margin-left: 50px;
 }
 
 .btn-whatsapp {
@@ -683,16 +709,38 @@ i {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
+  .footer {
+    height: 50%;
+  }
   footer p {
-    text-align: center;
-    width: 50%;
+    text-align: start;
+    width: 100%;
+    font-size: 13px;
   }
   .logo-footer {
     width: 250px;
   }
+  .img-logo {
+    justify-content: center;
+  }
   .btn-whatsapp img {
     max-width: 64px;
+  }
+  .footer-conteudo .texto {
+    display: none;
+  }
+  .footer-conteudo {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    justify-content: center;
+  }
+  .footer-icons {
+    display: none;
   }
 }
 .acomadacao {

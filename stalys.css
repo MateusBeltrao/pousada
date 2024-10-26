@@ -822,6 +822,7 @@ i {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 14px;
   background-color: #fff;
   z-index: 99;
@@ -829,8 +830,8 @@ i {
 
 .alocacao-info button {
   color: #4da330;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
   background-color: #fdc604;
   padding: 4px 8px;
   border-radius: 4px;

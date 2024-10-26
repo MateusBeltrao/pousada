@@ -951,3 +951,34 @@
     }
 
 }
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: #fdc604;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+.form input, textarea, button {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    color: #777;
+    font-size: 18px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+

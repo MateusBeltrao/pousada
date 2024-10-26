@@ -167,7 +167,7 @@
     }
 
     p {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         line-height: 100%;
         font-weight: 100;
         font-size: 18px;
@@ -550,7 +550,7 @@
 
 
 
-.card-list .card-link .card-image {
+.card-list .card-link {
     width: 100%;
     aspect-ratio: 16 /9 ;
     object-fit: cover;
@@ -565,6 +565,7 @@
 
 .slider-manual{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

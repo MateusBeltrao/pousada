@@ -251,6 +251,24 @@ i {
   display: block; /* Remove espaço abaixo da imagem */
 }
 
+.palm-tree {
+  position: absolute; /* Para posicionar fora do fluxo normal */
+  width: 300px; /* Aumente a largura conforme necessário */
+  height: auto; /* Mantém a proporção */
+}
+
+.palm-tree.left {
+  left: 20px; /* Distância da esquerda */
+  top: 90%; /* Tente 90% ou menos para baixar a imagem */
+  transform: translateY(-30%); /* Ajuste para baixar ainda mais, se necessário */
+}
+
+.palm-tree.right {
+  right: 20px; /* Distância da direita */
+  top: 90%; /* Tente 90% ou menos para baixar a imagem */
+  transform: translateY(-30%); /* Ajuste para baixar ainda mais, se necessário */
+}
+
 @media screen and (min-width: 1900px) {
   .conteudo-about {
     width: 100%;
@@ -286,6 +304,9 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
+  .palm-tree {
+    display: none; /* Oculta as palmeiras em telas menores */
+  }
   .about-content {
     flex-direction: column;
   }

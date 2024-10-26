@@ -12,11 +12,12 @@ menuToggle.addEventListener('click', () => {
 });
 
     
-    // Apresentação de Slides
+// Inicializa os sliders
+function initializeSlider(slidesContainerSelector, slideClass) {
     let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll(slideClass);
     const totalSlides = slides.length;
-    const slidesContainer = document.querySelector('.slides');
+    const slidesContainer = document.querySelector(slidesContainerSelector);
 
     function showSlide(index) {
         if (slidesContainer) {
@@ -29,6 +30,20 @@ menuToggle.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % totalSlides;
         showSlide(currentIndex);
     }, 3000);
+}
+
+// Inicializa os sliders com delay
+initializeSlider('.slides', '.slide'); // Slider 1
+
+setTimeout(() => {
+    initializeSlider('.slides-2', '.slide-2'); // Slider 2 com atraso
+}, 1000); // 2000 ms = 2 segundos de atraso
+
+setTimeout(() => {
+    initializeSlider('.slides-3', '.slide-3'); // Slider 3 com atraso
+}, 2000); // 4000 ms = 4 segundos de atraso
+
+
 
     // Swiper
     const swiper = new Swiper('.card-wrapper', {
@@ -50,21 +65,5 @@ menuToggle.addEventListener('click', () => {
         }
     });
 
-    // Segundo conjunto de slides
-    let currentIndex2 = 0;
-    const slides2 = document.querySelectorAll('.slide-2');
-    const totalSlides2 = slides2.length;
-    const slidesContainer2 = document.querySelector('.slides-2');
-
-    function showSlide2(index) {
-        if (slidesContainer2) {
-            const offset2 = -index * 100;
-            slidesContainer2.style.transform = `translateX(${offset2}%)`;
-        }
-    }
-
-    setInterval(() => {
-        currentIndex2 = (currentIndex2 + 1) % totalSlides2;
-        showSlide2(currentIndex2);
-    }, 3000);
+   
 });

@@ -63,23 +63,52 @@
             
     
         </section>
-        
-          
-        <div class="forms">
-            <h1>Contato</h1>
-            <form class="form" action="https://formsubmit.co/mateusbeltrao2019@email.com" method="POST">
-                <input type="text" name="name" placeholder="Digite seu nome" required>
-                <input type="email" name="email" placeholder="Digite seu e-mail" required>
-                <textarea cols="30" rows="10" name="message" placeholder="Digite sua message"></textarea>
-                <button type="submit">ENVIAR</button>
-
-                <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-           </form>
+       
+        <div class="slider" data-aos="fade-up" data-aos-delay="50">
+            <div class="slides">
+                <div class="slide first">
+                    <img src="../assets/i-h/IMG_2540.JPG" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="../assets/i-h/IMG_2543.JPG" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="../assets/i-h/IMG_2544.JPG" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="../assets/i-h/IMG_2561.JPG" alt="Image 4">
+                </div>
+            </div>
         </div>
         
     
+    </div>
+
+
+     
+    <div class="forms">
+        <h1>Contato</h1>
+        <form action="https://formspree.io/f/mdkoaokw" method="POST">
+            <div class="divform">
+                <label>
+                    Seu nome:
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </label>
+                <label>
+                    Seu e-mail:
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                </label>
+            </div>
+            
+            <label>
+                Sua mensagem:
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            </label>
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">ENVIAR</button>
+        </form>
     </div>
 
     <footer class="footer">
@@ -132,6 +161,7 @@
         <img src="../assets/whatssapp.svg" alt="Botao whatssapp">
         <span class="tooltip-text"> Reserve agora!</span>
     </a>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="../script.js"></script>

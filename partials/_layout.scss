@@ -900,11 +900,15 @@
 
 
 
-
+@media screen and ( max-width: 1000px){
+    .arvore {
+        display: none;
+    }
+}
 
 
 .nossahistoria {
-    margin: 5px;
+    margin: 20px;
 }
 
 
@@ -1089,5 +1093,4 @@ form button:hover {
     align-items: center;
     justify-content: center;
 }
-
 
